@@ -2,7 +2,7 @@ import { Contact } from "./Contact";
 
 export function Main() {
     return (
-        <div>
+        <>
             {/* CONTEÚDO PRINCIPAL */}
             < main className="flex-grow max-w-6xl mx-auto px-4 sm:px-6 w-full space-y-16 md:space-y-24" >
 
@@ -335,6 +335,6 @@ export function Main() {
 
                 <Contact />
             </main >
-        </div>
+        </>
     );
 }
