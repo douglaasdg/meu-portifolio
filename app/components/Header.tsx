@@ -2,7 +2,7 @@ import { Home } from 'lucide-react';
 
 export function Header() {
     return (
-        <div>
+        <>
             {/* HEADER */}
             <header className="p-4 border-b border-green-800 sticky top-0 bg-white z-10 shadow-sm">
                 <nav className="max-w-6xl mx-auto flex flex-row justify-between items-center w-full">
@@ -39,6 +39,6 @@ export function Header() {
                     </ul>
                 </nav>
             </header>
-        </div>
+        </>
     );
 }
