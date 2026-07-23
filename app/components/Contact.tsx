@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 
 export function Contact() {
     return (
-        <div>
+        <>
             {/* CONTACT SECTION */}
             <section id="contact" className="scroll-mt-24 pb-40">
                 <div className="flex justify-center mb-6">
@@ -59,6 +59,6 @@ export function Contact() {
                 </article>
                 </div>
             </section>
-        </div>
+        </>
     );
 }
