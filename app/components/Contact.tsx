@@ -12,8 +12,8 @@ export function Contact() {
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center">Entre em contato</h2>
                 <div className="">
-                    <article className="items-center p-6 border-green-800 rounded-lg flex flex-col h-50 sm:h-full md:h-80 bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                        <p className="text-zinc-400 mb-4 flex-grow">Se você deseja entrar em contato comigo, sinta-se à vontade para me enviar um e-mail, me adicionar no LinkedIn ou GitHub.<br></br> Confira também meu currículo logo abaixo!</p>
+                    <article className="items-center p-6 border-green-800 rounded-lg flex flex-col h-80 sm:h-full md:h-80 bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        <p className="text-zinc-400 mb-2 flex-grow">Se você deseja entrar em contato comigo, sinta-se à vontade para me enviar um e-mail, me adicionar no LinkedIn ou GitHub.<br></br> Confira também meu currículo logo abaixo!</p>
                         <a href="mailto:crisfer_012@outlook.com" target="_blank" rel="noopener noreferrer" className="p-3 text-black hover:text-green-600 font-semibold text-sm">
                             <div className="flex items-center gap-2">
                                 <Mail className="w-6 h-6" />
