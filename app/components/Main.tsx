@@ -167,6 +167,17 @@ export function Main() {
                                 <span className="font-semibold text-sm sm:text-base">Next.js</span>
                             </div>
 
+                            <div className="flex items-center justify-center gap-2 p-3 sm:p-4 border border-green-800 rounded-lg text-green-800 hover:bg-green-800 hover:text-white transition duration-300 transform hover:-translate-y-1 cursor-default">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                    alt="Tailwind CSS"
+                                    width="32"
+                                    height="32"
+                                    className="w-8 h-8 flex-shrink-0 object-contain"
+                                />
+                                <span className="font-semibold text-sm sm:text-base">Tailwind</span>
+                            </div>
+
                             {/* Java */}
                             <div className="flex items-center justify-center gap-2 p-3 sm:p-4 border border-green-800 rounded-lg text-green-800 hover:bg-green-800 hover:text-white transition duration-300 transform hover:-translate-y-1 cursor-default">
                                 <img
@@ -260,15 +271,42 @@ export function Main() {
                                 <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">Portifólio</h3>
                                 <p className="px-3 text-zinc-400 mb-4 flex-grow">Aplicação web responsiva criada para centralizar meus projetos e habilidades. Conta com navegação intuitiva, suporte a mobile e alta performance com Next.js, TypeScript e Tailwind CSS.</p>
                                 <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Next.js
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        TypeScript
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Tailwind CSS
-                                    </span>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                                            alt="Next.js"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Next.js
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                                            alt="TypeScript"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            TypeScript
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                                            alt="Tailwind CSS"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Tailwind CSS
+                                        </span>
+                                    </div>
                                 </div>
                                 <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
                                     Ver detalhes
@@ -282,18 +320,54 @@ export function Main() {
                                 <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">O Nosso Sim</h3>
                                 <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma web responsiva para convite de casamento e gestão de eventos. Desenvolvida com HTML5, CSS3, JavaScript e Bootstrap, oferece uma experiência fluida, moderna e totalmente adaptada para dispositivos móveis.</p>
                                 <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        HTML5
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        CSS3
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Bootstrap
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        JavaScript
-                                    </span>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                            alt="HTML5"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            HTML5
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                            alt="CSS3"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            CSS3
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                                            alt="Bootstrap"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Bootstrap
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                            alt="JavaScript"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            JavaScript
+                                        </span>
+                                    </div>
                                 </div>
                                 <a href="https://ebac-projeto-3-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
                                     Ver detalhes
@@ -307,21 +381,66 @@ export function Main() {
                                 <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">E-Pay</h3>
                                 <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma fintech em desenvolvimento focada em soluções financeiras. Desenvolvida com HTML5, CSS3, Bootstrap, Java e Spring Boot, prioriza uma interface intuitiva, segura e com layout totalmente responsivo.</p>
                                 <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        HTML
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        CSS3
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Bootstrap
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Java
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Spring Boot
-                                    </span>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                            alt="HTML5"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            HTML5
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                            alt="CSS3"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            CSS3
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                                            alt="Bootstrap"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Bootstrap
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                                            alt="Java"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Java
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                                            alt="Spring Boot"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Spring Boot
+                                        </span>
+                                    </div>
                                 </div>
                                 <a href="https://fase-4-cap-9-fiap.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
                                     Ver detalhes
@@ -335,18 +454,54 @@ export function Main() {
                                 <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">E-Commerce</h3>
                                 <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma de e-commerce e reservas voltada para o setor de resorts e hospedagem. Desenvolvida com HTML5, CSS3, Bootstrap e JavaScript, conta com design responsivo.</p>
                                 <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        HTML5
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        CSS3
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        JavaScript
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Bootstrap
-                                    </span>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                            alt="HTML5"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            HTML5
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                            alt="CSS3"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            CSS3
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                            alt="JavaScript"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            JavaScript
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                                            alt="Bootstrap"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Bootstrap
+                                        </span>
+                                    </div>
                                 </div>
                                 <a href="https://fase-4-cap-8-fiap.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
                                     Ver detalhes
@@ -360,18 +515,54 @@ export function Main() {
                                 <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">Constellation</h3>
                                 <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma web para busca e reserva de passagens aéreas. Desenvolvida com HTML5, CSS3 e Bootstrap, conta com navegação fluida por carrossel de destinos, cards interativos de ofertas e modais para confirmação de voos.</p>
                                 <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        HTML
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        CSS3
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        Bootstrap
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        JavaScript
-                                    </span>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                            alt="HTML5"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            HTML5
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                            alt="CSS3"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            CSS3
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                                            alt="Bootstrap"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            Bootstrap
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                                            alt="JavaScript"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            JavaScript
+                                        </span>
+                                    </div>
                                 </div>
                                 <a href="https://exercicio-ebac-bootstrap-chi.vercel.app" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
                                     Ver detalhes
@@ -385,12 +576,30 @@ export function Main() {
                                 <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">112 HIGHWAY</h3>
                                 <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma web para vitrine de veículos e atendimento de concessionária. Desenvolvida com HTML5 e CSS3, possui design responsivo, catálogo visual de carros e navegação simples focada na conversão de clientes.</p>
                                 <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        HTML
-                                    </span>
-                                    <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        CSS
-                                    </span>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                                            alt="HTML5"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            HTML5
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                                            alt="CSS3"
+                                            width="32"
+                                            height="32"
+                                            className="w-8 h-8 flex-shrink-0 object-contain"
+                                        />
+                                        <span className="text-emerald-400">
+                                            CSS3
+                                        </span>
+                                    </div>
                                 </div>
                                 <a href="https://loja112highway.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
                                     Ver detalhes
