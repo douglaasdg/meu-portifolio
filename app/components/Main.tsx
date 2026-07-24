@@ -17,7 +17,7 @@ export function Main() {
                                 Desenvolvedor Full Stack
                             </h3>
                             <p className="text-base md:text-lg text-zinc-500 max-w-lg leading-relaxed">
-                                Estudante de Análise e Desenvolvimento de Sistemas na FIAP, com experiência real em desenvolvimento web, back-end com Java/Spring Boot, front-end com React e Next.js, além de habilidades em banco de dados SQL e NoSQL. Apaixonado por tecnologia e sempre em busca de novos desafios para aprimorar minhas habilidades.
+                                Sou estudante de Análise e Desenvolvimento de Sistemas na FIAP e venho construindo minha trajetória no desenvolvimento Full Stack. Na prática, crio aplicações web modernas unindo o poder do Java/Spring Boot no back-end com a fluidez de React e Next.js no front-end, além de estruturar dados com Oracle SQL. Estou sempre em busca de novos desafios para aprimorar minhas habilidades e gerar impacto real através da tecnologia.
                             </p>
                             <div id="hero-links" className="mt-8 flex flex-wrap justify-center md:justify-start gap-4 w-full">
                                 <a href="#skills" className="bg-white border-2 border-green-800 text-green-800 px-6 py-3 rounded-lg hover:bg-green-800 hover:text-white transition duration-300 transform hover:-translate-y-1 text-center w-full sm:w-auto">
