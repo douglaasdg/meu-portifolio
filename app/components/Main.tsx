@@ -446,6 +446,9 @@ export function Main() {
                                     <a href="https://github.com/douglaasdg/epay-fintech" target="_blank" rel="noopener noreferrer" className="text-green-800 hover:text-green-600 font-semibold text-sm">
                                         Ver Repositório GitHub
                                     </a>
+                                    <a href="https://frontend-fpctn57gs-douglas-projects-3a4e46ac.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-green-800 hover:text-green-600 font-semibold text-sm">
+                                        Acessar o site
+                                    </a>
                                 </div>
                             </article>
                         </ScrollReveal>
