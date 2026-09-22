@@ -1,5 +1,6 @@
 import { Contact } from "./Contact";
 import ScrollReveal from "./ScrollReveal";
+import { ExternalLink, Sparkles } from "lucide-react";
 
 export function Main() {
     return (
@@ -264,351 +265,316 @@ export function Main() {
                         <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center">Projetos</h2>
                     </ScrollReveal>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* 1. PORTFÓLIO */}
                         <ScrollReveal delay={0.1}>
-                            <article className="p-1 border-green-800 rounded-lg flex flex-col h-full bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                                <img src="./projeto_0.png" alt="Projeto 0" className="w-full h-auto object-cover mb-4" />
-                                <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">Portifólio</h3>
-                                <p className="px-3 text-zinc-400 mb-4 flex-grow">Aplicação web responsiva criada para centralizar meus projetos e habilidades. Conta com navegação intuitiva, suporte a mobile e alta performance com Next.js, TypeScript e Tailwind CSS.</p>
-                                <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-                                            alt="Next.js"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Next.js
-                                        </span>
+                            <article className="group bg-white rounded-2xl border border-zinc-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full">
+                                <div className="relative overflow-hidden aspect-video bg-zinc-100 border-b border-zinc-100">
+                                    <img 
+                                        src="./projeto_0.png" 
+                                        alt="Portfólio Pessoal" 
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h3 className="text-xl font-bold text-zinc-900 group-hover:text-green-800 transition-colors mb-2">
+                                        Portfólio Pessoal
+                                    </h3>
+                                    <p className="text-sm text-zinc-500 leading-relaxed mb-6 flex-grow">
+                                        Aplicação web responsiva criada para centralizar meus projetos e habilidades. Conta com navegação intuitiva, suporte a mobile e alta performance com Next.js, TypeScript e Tailwind CSS.
+                                    </p>
+                                    <div className="flex gap-2 mb-6 flex-wrap">
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Next.js</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-3.5 h-3.5 object-contain" />
+                                            <span>TypeScript</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Tailwind CSS</span>
+                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                                            alt="TypeScript"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            TypeScript
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                                            alt="Tailwind CSS"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Tailwind CSS
-                                        </span>
+                                    <div className="pt-4 border-t border-zinc-100 mt-auto grid grid-cols-2 gap-3">
+                                        <a 
+                                            href="https://github.com/douglaasdg/meu-portifolio" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border border-zinc-200 bg-zinc-50 hover:bg-zinc-100 text-zinc-700 font-semibold text-xs transition"
+                                        >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" className="w-4 h-4 object-contain" />
+                                            Repositório
+                                        </a>
+                                        <a 
+                                            href="#hero" 
+                                            className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-green-800 hover:bg-green-900 text-white font-semibold text-xs shadow-sm hover:shadow transition"
+                                        >
+                                            <ExternalLink className="w-4 h-4" />
+                                            Acessar Site
+                                        </a>
                                     </div>
                                 </div>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
-                                    Ver detalhes
-                                </a>
                             </article>
                         </ScrollReveal>
 
+                        {/* 2. E-PAY FINTECH (FULL-STACK DESTAQUE) */}
                         <ScrollReveal delay={0.2}>
-                            <article className="p-1 border-green-800 rounded-lg flex flex-col h-full bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                                <img src="./projeto_1.png" alt="Projeto 1" className="w-full h-auto object-cover mb-4" />
-                                <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">O Nosso Sim</h3>
-                                <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma web responsiva para convite de casamento e gestão de eventos. Desenvolvida com HTML5, CSS3, JavaScript e Bootstrap, oferece uma experiência fluida, moderna e totalmente adaptada para dispositivos móveis.</p>
-                                <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                            alt="HTML5"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            HTML5
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                            alt="CSS3"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            CSS3
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                                            alt="Bootstrap"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Bootstrap
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            JavaScript
-                                        </span>
+                            <article className="group bg-white rounded-2xl border-2 border-green-800/80 overflow-hidden shadow-md hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full relative">
+                                <div className="relative overflow-hidden aspect-video bg-zinc-100 border-b border-zinc-100">
+                                    <img 
+                                        src="./projeto_2.png" 
+                                        alt="E-Pay Fintech" 
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                    />
+                                    <div className="absolute top-3 right-3 bg-green-800/95 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-lg flex items-center gap-1.5 border border-green-600/50">
+                                        <Sparkles className="w-3.5 h-3.5 text-yellow-300 animate-pulse" />
+                                        FULL-STACK DESTAQUE
                                     </div>
                                 </div>
-                                <a href="https://ebac-projeto-3-nine.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
-                                    Ver detalhes
-                                </a>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h3 className="text-xl font-bold text-zinc-900 group-hover:text-green-800 transition-colors mb-2">
+                                        E-Pay Fintech (Full-Stack)
+                                    </h3>
+                                    <p className="text-sm text-zinc-500 leading-relaxed mb-6 flex-grow">
+                                        Plataforma fintech corporativa ponta a ponta. Arquitetura em camadas com Spring Boot e Oracle SQL, segurança stateless via JWT, transferências Pix atômicas com garantia ACID (@Transactional), gestão de cartões virtuais com ajuste dinâmico de limites e simulador de investimentos.
+                                    </p>
+                                    <div className="flex gap-2 mb-6 flex-wrap">
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="w-3.5 h-3.5 object-contain" />
+                                            <span>React</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Java</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Spring Boot</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle SQL" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Oracle SQL</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Tailwind CSS</span>
+                                        </div>
+                                    </div>
+                                    <div className="pt-4 border-t border-zinc-100 mt-auto grid grid-cols-2 gap-3">
+                                        <a 
+                                            href="https://github.com/douglaasdg/epay-fintech" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl border border-zinc-200 bg-zinc-50 hover:bg-zinc-100 text-zinc-700 font-semibold text-xs transition"
+                                        >
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" className="w-4 h-4 object-contain" />
+                                            Repositório
+                                        </a>
+                                        <a 
+                                            href="https://frontend-fpctn57gs-douglas-projects-3a4e46ac.vercel.app/" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-green-800 hover:bg-green-900 text-white font-semibold text-xs shadow-sm hover:shadow transition"
+                                        >
+                                            <ExternalLink className="w-4 h-4" />
+                                            Acessar Site
+                                        </a>
+                                    </div>
+                                </div>
                             </article>
                         </ScrollReveal>
 
+                        {/* 3. O NOSSO SIM */}
                         <ScrollReveal delay={0.1}>
-                            <article className="p-1 border-green-800 rounded-lg flex flex-col h-full bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                                <img src="./projeto_2.png" alt="Projeto 2" className="w-full h-auto object-cover mb-4" />
-                                <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">E-Pay Fintech (Full-Stack)</h3>
-                                <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma fintech corporativa de ponta a ponta (Full-Stack). Desenvolvida com React e Tailwind CSS no front-end, e Java com Spring Boot no back-end integrado ao Oracle SQL. Conta com autenticação stateless via JWT, transferências Pix atômicas com garantia ACID (@Transactional), gestão de cartões virtuais com ajuste dinâmico de limites e simulador de investimentos.</p>
-                                <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                                            alt="React"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            React
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-                                            alt="Java"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Java
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-                                            alt="Spring Boot"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Spring Boot
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
-                                            alt="Oracle SQL"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Oracle SQL
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                                            alt="Tailwind CSS"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Tailwind CSS
-                                        </span>
-                                    </div>
+                            <article className="group bg-white rounded-2xl border border-zinc-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full">
+                                <div className="relative overflow-hidden aspect-video bg-zinc-100 border-b border-zinc-100">
+                                    <img 
+                                        src="./projeto_1.png" 
+                                        alt="O Nosso Sim" 
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                    />
                                 </div>
-                                <div className="p-3 flex items-center justify-between">
-                                    <a href="https://github.com/douglaasdg/epay-fintech" target="_blank" rel="noopener noreferrer" className="text-green-800 hover:text-green-600 font-semibold text-sm">
-                                        Ver Repositório GitHub
-                                    </a>
-                                    <a href="https://frontend-fpctn57gs-douglas-projects-3a4e46ac.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-green-800 hover:text-green-600 font-semibold text-sm">
-                                        Acessar o site
-                                    </a>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h3 className="text-xl font-bold text-zinc-900 group-hover:text-green-800 transition-colors mb-2">
+                                        O Nosso Sim
+                                    </h3>
+                                    <p className="text-sm text-zinc-500 leading-relaxed mb-6 flex-grow">
+                                        Plataforma web responsiva para convite de casamento e gestão de eventos. Desenvolvida com HTML5, CSS3, JavaScript e Bootstrap, oferece uma experiência fluida, moderna e totalmente adaptada para dispositivos móveis.
+                                    </p>
+                                    <div className="flex gap-2 mb-6 flex-wrap">
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" className="w-3.5 h-3.5 object-contain" />
+                                            <span>HTML5</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" className="w-3.5 h-3.5 object-contain" />
+                                            <span>CSS3</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Bootstrap</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-3.5 h-3.5 object-contain" />
+                                            <span>JavaScript</span>
+                                        </div>
+                                    </div>
+                                    <div className="pt-4 border-t border-zinc-100 mt-auto">
+                                        <a 
+                                            href="https://ebac-projeto-3-nine.vercel.app/" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-green-800 hover:bg-green-900 text-white font-semibold text-xs shadow-sm hover:shadow transition"
+                                        >
+                                            <ExternalLink className="w-4 h-4" />
+                                            Acessar Projeto
+                                        </a>
+                                    </div>
                                 </div>
                             </article>
                         </ScrollReveal>
 
+                        {/* 4. E-COMMERCE */}
                         <ScrollReveal delay={0.2}>
-                            <article className="p-1 border-green-800 rounded-lg flex flex-col h-full bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                                <img src="./projeto_3.png" alt="Projeto 3" className="w-full h-auto object-cover mb-4" />
-                                <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">E-Commerce</h3>
-                                <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma de e-commerce e reservas voltada para o setor de resorts e hospedagem. Desenvolvida com HTML5, CSS3, Bootstrap e JavaScript, conta com design responsivo.</p>
-                                <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                            alt="HTML5"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            HTML5
-                                        </span>
+                            <article className="group bg-white rounded-2xl border border-zinc-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full">
+                                <div className="relative overflow-hidden aspect-video bg-zinc-100 border-b border-zinc-100">
+                                    <img 
+                                        src="./projeto_3.png" 
+                                        alt="E-Commerce" 
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h3 className="text-xl font-bold text-zinc-900 group-hover:text-green-800 transition-colors mb-2">
+                                        E-Commerce Resorts
+                                    </h3>
+                                    <p className="text-sm text-zinc-500 leading-relaxed mb-6 flex-grow">
+                                        Plataforma de e-commerce e reservas voltada para o setor de resorts e hospedagem. Desenvolvida com HTML5, CSS3, Bootstrap e JavaScript, conta com design responsivo.
+                                    </p>
+                                    <div className="flex gap-2 mb-6 flex-wrap">
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" className="w-3.5 h-3.5 object-contain" />
+                                            <span>HTML5</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" className="w-3.5 h-3.5 object-contain" />
+                                            <span>CSS3</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Bootstrap</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-3.5 h-3.5 object-contain" />
+                                            <span>JavaScript</span>
+                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                            alt="CSS3"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            CSS3
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            JavaScript
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                                            alt="Bootstrap"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Bootstrap
-                                        </span>
+                                    <div className="pt-4 border-t border-zinc-100 mt-auto">
+                                        <a 
+                                            href="https://fase-4-cap-8-fiap.vercel.app/" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-green-800 hover:bg-green-900 text-white font-semibold text-xs shadow-sm hover:shadow transition"
+                                        >
+                                            <ExternalLink className="w-4 h-4" />
+                                            Acessar Projeto
+                                        </a>
                                     </div>
                                 </div>
-                                <a href="https://fase-4-cap-8-fiap.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
-                                    Ver detalhes
-                                </a>
                             </article>
                         </ScrollReveal>
 
+                        {/* 5. CONSTELLATION */}
                         <ScrollReveal delay={0.1}>
-                            <article className="p-1 border-green-800 rounded-lg flex flex-col h-full bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                                <img src="./projeto_4.png" alt="Projeto 4" className="w-full h-auto object-cover mb-4" />
-                                <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">Constellation</h3>
-                                <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma web para busca e reserva de passagens aéreas. Desenvolvida com HTML5, CSS3 e Bootstrap, conta com navegação fluida por carrossel de destinos, cards interativos de ofertas e modais para confirmação de voos.</p>
-                                <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                            alt="HTML5"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            HTML5
-                                        </span>
+                            <article className="group bg-white rounded-2xl border border-zinc-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full">
+                                <div className="relative overflow-hidden aspect-video bg-zinc-100 border-b border-zinc-100">
+                                    <img 
+                                        src="./projeto_4.png" 
+                                        alt="Constellation" 
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h3 className="text-xl font-bold text-zinc-900 group-hover:text-green-800 transition-colors mb-2">
+                                        Constellation
+                                    </h3>
+                                    <p className="text-sm text-zinc-500 leading-relaxed mb-6 flex-grow">
+                                        Plataforma web para busca e reserva de passagens aéreas. Desenvolvida com HTML5, CSS3 e Bootstrap, conta com navegação fluida por carrossel de destinos, cards interativos de ofertas e modais para confirmação de voos.
+                                    </p>
+                                    <div className="flex gap-2 mb-6 flex-wrap">
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" className="w-3.5 h-3.5 object-contain" />
+                                            <span>HTML5</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" className="w-3.5 h-3.5 object-contain" />
+                                            <span>CSS3</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-3.5 h-3.5 object-contain" />
+                                            <span>Bootstrap</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-3.5 h-3.5 object-contain" />
+                                            <span>JavaScript</span>
+                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                            alt="CSS3"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            CSS3
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                                            alt="Bootstrap"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            Bootstrap
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            JavaScript
-                                        </span>
+                                    <div className="pt-4 border-t border-zinc-100 mt-auto">
+                                        <a 
+                                            href="https://exercicio-ebac-bootstrap-chi.vercel.app" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-green-800 hover:bg-green-900 text-white font-semibold text-xs shadow-sm hover:shadow transition"
+                                        >
+                                            <ExternalLink className="w-4 h-4" />
+                                            Acessar Projeto
+                                        </a>
                                     </div>
                                 </div>
-                                <a href="https://exercicio-ebac-bootstrap-chi.vercel.app" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
-                                    Ver detalhes
-                                </a>
                             </article>
                         </ScrollReveal>
 
+                        {/* 6. 112 HIGHWAY */}
                         <ScrollReveal delay={0.2}>
-                            <article className="p-1 border-green-800 rounded-lg flex flex-col h-full bg-white hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                                <img src="./projeto_5.png" alt="Projeto 5" className="w-full h-auto object-cover mb-4" />
-                                <h3 className="px-3 text-xl font-semibold mb-2 text-zinc-600">112 HIGHWAY</h3>
-                                <p className="px-3 text-zinc-400 mb-4 flex-grow">Plataforma web para vitrine de veículos e atendimento de concessionária. Desenvolvida com HTML5 e CSS3, possui design responsivo, catálogo visual de carros e navegação simples focada na conversão de clientes.</p>
-                                <div className="px-3 flex gap-2 mb-6 flex-wrap">
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                            alt="HTML5"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            HTML5
-                                        </span>
+                            <article className="group bg-white rounded-2xl border border-zinc-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full">
+                                <div className="relative overflow-hidden aspect-video bg-zinc-100 border-b border-zinc-100">
+                                    <img 
+                                        src="./projeto_5.png" 
+                                        alt="112 HIGHWAY" 
+                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                    />
+                                </div>
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <h3 className="text-xl font-bold text-zinc-900 group-hover:text-green-800 transition-colors mb-2">
+                                        112 HIGHWAY
+                                    </h3>
+                                    <p className="text-sm text-zinc-500 leading-relaxed mb-6 flex-grow">
+                                        Plataforma web para vitrine de veículos e atendimento de concessionária. Desenvolvida com HTML5 e CSS3, possui design responsivo, catálogo visual de carros e navegação simples focada na conversão de clientes.
+                                    </p>
+                                    <div className="flex gap-2 mb-6 flex-wrap">
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" className="w-3.5 h-3.5 object-contain" />
+                                            <span>HTML5</span>
+                                        </div>
+                                        <div className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200/70">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" className="w-3.5 h-3.5 object-contain" />
+                                            <span>CSS3</span>
+                                        </div>
                                     </div>
-                                    <div className="flex items-center gap-2 px-2.5 py-1 text-xs font-medium rounded-full bg-emerald-500/10 border border-emerald-500/20 transition-all hover:bg-emerald-500/20">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                            alt="CSS3"
-                                            width="32"
-                                            height="32"
-                                            className="w-8 h-8 flex-shrink-0 object-contain"
-                                        />
-                                        <span className="text-emerald-400">
-                                            CSS3
-                                        </span>
+                                    <div className="pt-4 border-t border-zinc-100 mt-auto">
+                                        <a 
+                                            href="https://loja112highway.vercel.app/" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-green-800 hover:bg-green-900 text-white font-semibold text-xs shadow-sm hover:shadow transition"
+                                        >
+                                            <ExternalLink className="w-4 h-4" />
+                                            Acessar Projeto
+                                        </a>
                                     </div>
                                 </div>
-                                <a href="https://loja112highway.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-3 text-green-800 hover:text-green-600 font-semibold text-sm">
-                                    Ver detalhes
-                                </a>
                             </article>
                         </ScrollReveal>
                     </div>
