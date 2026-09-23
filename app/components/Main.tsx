@@ -373,7 +373,7 @@ export function Main() {
                                             Repositório
                                         </a>
                                         <a 
-                                            href="https://frontend-fpctn57gs-douglas-projects-3a4e46ac.vercel.app/" 
+                                            href="https://frontend-alpha-two-z0i7h31pfm.vercel.app/" 
                                             target="_blank" 
                                             rel="noopener noreferrer" 
                                             className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-green-800 hover:bg-green-900 text-white font-semibold text-xs shadow-sm hover:shadow transition"
